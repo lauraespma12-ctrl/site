@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portafolio - Laura Natalia Espinosa Marroquín</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+	/* ==== FONDO Y TIPOGRAFÍA ==== */
+	body {
+		background-image: url("images/bg_img.jpg"); /* Fondo (foto bowl de frutas) */
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		font-family: 'Poppins', sans-serif;
+		color: #444;
+	}
+
+	h1, h2, h3 {
+		font-family: 'Dancing Script', cursive;
+		color: #a86da0; /* lila pastel */
+	}
+
+	p {
+		color: #555;
+	}
+
+	/* ==== MENÚ ==== */
+	.fh5co-tab-menu {
+		background: rgba(255, 255, 255, 0.7);
+		border-radius: 12px;
+		padding: 8px;
+	}
+
+	.fh5co-tab-menu li a {
+		color: #a86da0;
+		font-weight: 500;
+	}
+
+	.fh5co-tab-menu li.active a {
+		background: #f8cdd1; /* rosa pastel */
+		color: #fff;
+		border-radius: 8px;
+	}
+
+	/* ==== FOTO PERSONAL ==== */
+	figure img {
+		width: 220px;
+		height: 220px;
+		object-fit: cover;
+		border-radius: 50%;
+		border: 6px solid #f8cdd1; /* borde rosa pastel */
+		box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+	}
+
+	/* ==== COLORES DE GRÁFICOS ==== */
+	.chart {
+		color: #a86da0 !important; /* lila pastel */
+	}
+
+	.chart span strong {
+		color: #f4978e; /* rosa coral pastel */
+	}
+
+	/* ==== ICONOS ==== */
+	.icon {
+		color: #f4978e; /* rosa coral pastel */
+	}
+
+	/* ==== SECCIONES ==== */
+	.fh5co-tab-content {
+		background: rgba(255, 255, 255, 0.85);
+		padding: 20px;
+		border-radius: 15px;
+		margin-top: 20px;
+	}
+
+	/* ==== FOOTER ==== */
+	#fh5co-footer {
+		margin-top: 40px;
+		padding: 20px 0;
+		background: rgba(255, 255, 255, 0.8);
+		border-top: 2px solid #f8cdd1;
+	}
+
+	/* ==== BOTÓN PORTAFOLIO ==== */
+	.btn-portafolio {
+		display: inline-block;
+		margin-top: 20px;
+		padding: 12px 25px;
+		background: linear-gradient(135deg, #f8cdd1, #a86da0);
+		color: white;
+		font-weight: 600;
+		font-size: 18px;
+		border-radius: 30px;
+		text-decoration: none;
+		box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+		transition: all 0.3s ease;
+	}
+
+	.btn-portafolio:hover {
+		background: linear-gradient(135deg, #a86da0, #f4978e);
+		transform: translateY(-3px);
+		box-shadow: 0px 6px 15px rgba(0,0,0,0.25);
+	}
+
+	/* ==== FIX: permitir scroll ==== */
+	html, body { height: auto !important; min-height: 100%; overflow-y: auto !important; }
+	#fh5co-main, .fh5co-tab-wrap, .fh5co-tab-content { height: auto !important; overflow: visible !important; }
+	body { overflow-x: hidden; }
+	@media (max-width: 1024px) { body { background-attachment: scroll; } }
+
+	</style>
+</head>
+<body>
+	
+	<div id="fh5co-main">
+		<div class="fh5co-tab-wrap">
+			<ul class="fh5co-tab-menu">
+				<li class="active"><a href="#" data-tab="1"><span class="icon icon-user"></span><span class="menu-text">Sobre mí</span></a></li>
+				<li><a href="#" data-tab="2"><span class="icon icon-book"></span><span class="menu-text">Educación</span></a></li>
+				<li><a href="#" data-tab="3"><span class="icon icon-briefcase"></span><span class="menu-text">Experiencia</span></a></li>
+				<li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-star"></span><span class="menu-text">Habilidades</span></a></li>
+				<li><a href="#" data-tab="5"><span class="icon icon-camera"></span><span class="menu-text">Portafolio</span></a></li>
+			</ul>
+
+			<!-- Sección de perfil -->
+			<div class="fh5co-tab-content active" data-content="1">
+				<div class="fh5co-content-inner text-center">
+					<figure>
+						<img src="images/mifoto.jpg" alt="Foto personal">
+					</figure>
+					<h1>Laura Natalia Espinosa Marroquín</h1>
+					<p>Soy una persona apasionada por el diseño, la creatividad y la innovación. Me encanta aprender, crear y compartir lo que sé con los demás.</p>
+				</div>
+			</div>
+
+		<!-- Educación -->
+		<div class="fh5co-tab-content" data-content="2">
+			<div class="fh5co-content-inner">
+				<h2>Mi formación académica</h2>
+				<p>Aquí podrás ver mis estudios más relevantes.</p>
+
+				<ul style="list-style: none; padding: 0; margin-top: 20px;">
+					<li style="margin-bottom: 15px;">
+						<h3>🎓 Comunicación Audiovisual y Multimedios</h3>
+						<p><em>Noveno semestre</em></p>
+					</li>
+					<li style="margin-bottom: 15px;">
+						<h3>🎓 Doble programa: Administración y Servicio</h3>
+						<p><em>Tercer semestre</em></p>
+					</li>
+					<li style="margin-bottom: 15px;">
+						<h3>📘 Diplomado en Marketing de Experiencia</h3>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Experiencia -->
+		<div class="fh5co-tab-content" data-content="3">
+			<div class="fh5co-content-inner">
+				<h2>Mi experiencia profesional</h2>
+				<p>He tenido la oportunidad de colaborar con proyectos y empresas que me han permitido crecer profesionalmente.</p>
+
+				<ul style="list-style: none; padding: 0; margin-top: 20px;">
+					<li style="margin-bottom: 20px;">
+						<h3>🍴 Oaxaca Cantina de Pueblo</h3>
+						<p><strong>2022 - Actualmente</strong></p>
+						<p>Trabajadora de fines de semana contratada como <em>auxiliar administrativa</em>, enfocada en:</p>
+						<ul>
+							<li>Atención al cliente, toma de pedidos y manejo de caja.</li>
+							<li>Colaboración en la organización y coordinación de eventos.</li>
+							<li>Apoyo en la gestión de limpieza y orden de las instalaciones.</li>
+							<li>Manejo y pedido de inventarios.</li>
+						</ul>
+					</li>
+
+					<li style="margin-bottom: 20px;">
+						<h3>💍 Joyería 999</h3>
+						<p><strong>2024 - 2025</strong></p>
+						<p>Realización de maquillajes profesionales para modelos en sesiones fotográficas y eventos promocionales.</p>
+					</li>
+
+					<li style="margin-bottom: 20px;">
+						<h3>🎭 Efecto Bannister</h3>
+						<p><strong>2021 - 2025</strong></p>
+						<ul>
+							<li>Maquillaje y estética de los actores de escena.</li>
+							<li>Montaje de escenografía.</li>
+						</ul>
+					</li>
+
+					<li style="margin-bottom: 20px;">
+						<h3>📹 Producción para redes sociales</h3>
+						<p><strong>2021 - 2025</strong></p>
+						<ul>
+							<li>Grabación de contenido audiovisual para emprendimientos.</li>
+							<li>Edición de videos para contenido en redes sociales.</li>
+							<li>Fotografía de producto y alimentos.</li>
+							<li>Creación de cortos y largometrajes para cine.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+				
+		<!-- Habilidades -->
+		<div class="fh5co-tab-content" data-content="4">
+			<div class="fh5co-content-inner">
+				<h2>Mis habilidades</h2>
+				<div class="row">
+
+					<div class="col-md-4 text-center">
+						<div class="chart" data-percent="95"><span><strong>DaVinci Resolve</strong>95%</span></div>
+					</div>
+
+					<div class="col-md-4 text-center">
+						<div class="chart" data-percent="97"><span><strong>Cámara</strong>97%</span></div>
+					</div>
+
+					<div class="col-md-4 text-center">
+						<div class="chart" data-percent="85"><span><strong>Photoshop</strong>85%</span></div>
+					</div>
+
+					<div class="col-md-4 text-center">
+						<div class="chart" data-percent="80"><span><strong>Illustrator</strong>80%</span></div>
+					</div>
+
+					<div class="col-md-4 text-center">
+						<div class="chart" data-percent="87"><span><strong>Audition</strong>87%</span></div>
+					</div>
+
+					<div class="col-md-4 text-center">
+						<div class="chart" data-percent="85"><span><strong>Adobe Premiere</strong>85%</span></div>
+					</div>
+
+					<div class="col-md-4 text-center">
+						<div class="chart" data-percent="86"><span><strong>Animate</strong>86%</span></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+			
+		<!-- Portafolio -->
+		<div class="fh5co-tab-content" data-content="5">
+			<div class="fh5co-content-inner text-center">
+				<h2>Mi Portafolio</h2>
+				<p>Aquí puedes ver algunos de mis proyectos destacados.</p>
+
+				<!-- Botón elegante -->
+				<a href="https://lauraespmdesign.odoo.com" target="_blank" class="btn-portafolio">
+					🌸 Ver mi portafolio completo
+				</a>
+			</div>
+		</div>
+		</div> <!-- cierre .fh5co-tab-wrap -->
+	</div> <!-- cierre #fh5co-main -->
+
+	<!-- Footer -->
+	<footer id="fh5co-footer">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center">
+				<small>
+					&copy; 2025 Laura Natalia Espinosa Marroquín. Todos los derechos reservados.
+				</small>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
